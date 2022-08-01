@@ -33,3 +33,4 @@ function countPositivesSumNegatives(input) {
 
     return outPut
 }
+console.log(countPositivesSumNegatives[0, 0])

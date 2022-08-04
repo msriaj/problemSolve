@@ -31,5 +31,4 @@ function hscw(params) {
     const maxV = inputArrValue.max();
     return inputArr[inputArrValue.indexOf(maxV)];
 }
-
 console.log(hscw("sohel riaj"))

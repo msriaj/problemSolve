@@ -24,6 +24,7 @@ function countPositivesSumNegatives(input) {
     }
 
     outPut.push(positive.length);
+
     let totalneg = 0;
     for (let index = 0; index < negetive.length; index++) {
         totalneg += negetive[index];

@@ -5,13 +5,11 @@
 // Note: If the number is a multiple of both 3 and 5, only count it once.
 
 function solution(number) {
-
     let sum = 0;
     for (let index = 1; index < number; index++) {
         if (index % 5 == 0 || index % 3 == 0) {
             sum += index
         }
-
     }
     return sum;
 }

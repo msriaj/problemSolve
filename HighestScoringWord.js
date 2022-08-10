@@ -22,13 +22,17 @@ function hscw(params) {
     for (let index = 0; index < inputArr.length; index++) {
         const element = inputArr[index].split("");
         let inputsValue = 0;
+
         for (let i = 0; i < element.length; i++) {
             inputsValue += abcdarray.indexOf(element[i]) + 1;
         }
+
         inputArrValue.push(inputsValue);
     }
 
     const maxV = inputArrValue.max();
     return inputArr[inputArrValue.indexOf(maxV)];
 }
+
+
 console.log(hscw("sohel riaj"))

@@ -16,7 +16,7 @@ function miniMaxSum(arr) {
 
 
     for (let i = 0; i < arr.length; i++) {
-        if (Math.max(...arr) === arr[i]) {
+        if (arr.indexOf(Math.max(...arr)) === i) {
             continue;
         } else {
             minS += arr[i]
@@ -24,7 +24,7 @@ function miniMaxSum(arr) {
     }
     for (let j = 0; j < arr.length; j++) {
 
-        if (Math.min(...arr) === arr[j]) {
+        if (arr.indexOf(Math.min(...arr)) === j) {
             continue;
         }
         else {

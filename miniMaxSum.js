@@ -23,14 +23,12 @@ function miniMaxSum(arr) {
         }
     }
     for (let j = 0; j < arr.length; j++) {
-
         if (arr.indexOf(Math.min(...arr)) === j) {
             continue;
         }
         else {
             highS += arr[j];
         }
-
     }
     console.log(minS, highS);
 }

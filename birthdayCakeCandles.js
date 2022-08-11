@@ -14,8 +14,9 @@
 
 function birthdayCakeCandles(candles) {
     let tallestCandlesCounter = 0;
+    let tallestCandles = Math.max(...candles)
     for (let i = 0; i < candles.length; i++) {
-        if (Math.max(...candles) === candles[i]) {
+        if (tallestCandles === candles[i]) {
             tallestCandlesCounter++;
         }
     }
